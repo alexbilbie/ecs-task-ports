@@ -2,7 +2,7 @@
 
 This is a Go library for use by microservices running in an AWS Elastic Container Service environment that wish to know their port mappings to update service discovery systems.
 
-For example a microservice might run on the port 8080 (the container port) but when run as a container using a Docker bridge network then the port is remapped to port 32481 (the host port).
+For example a microservice might bind to the port 8080 (the container port) but when run as a container using a Docker bridge network then the port is remapped to port 32481 (the host port).
 
 This library supports two methods for determining the container's ports:
 * Using the [container metadata file](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-metadata.html)
